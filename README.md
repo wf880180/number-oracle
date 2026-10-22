@@ -10,12 +10,12 @@
 
 範例：178 589 006 → 澤風大過（28），上六動 → 天風姤（44）。
 
-卦義關鍵字為簡短現代語摘要，並未包含完整爻辭或針對問題的 AI 解讀。
+包含64卦的現代語卦義整理、本卦與變卦說明、依六個爻位提供的階段提示，以及綜合閱讀。動爻提示並非每卦逐爻爻辭；文字不是古籍引文，也不是針對問題即時產生的 AI 解讀。
 
 ## 發布到 GitHub Pages
 
 1. 登入 GitHub 帳號 wf880180，建立名為 number-oracle 的新儲存庫。若要免費公開託管，可建立 Public 儲存庫。
-2. 在儲存庫選擇 Add file → Upload files，把本資料夾內的 index.html、style.css、core.js、app.js、.nojekyll、README.md、test.cjs 上傳到儲存庫根目錄，按 Commit changes。不要只上傳外層資料夾。
+2. 在儲存庫選擇 Add file → Upload files，把本資料夾內的 index.html、style.css、core.js、reading.js、app.js、.nojekyll、README.md、test.cjs 上傳到儲存庫根目錄，按 Commit changes。不要只上傳外層資料夾。
 3. 開啟 Settings → Pages。在 Build and deployment 選 Deploy from a branch；選 main 分支、/(root)，按 Save。
 4. 等 GitHub 顯示網站發布成功後，使用 https://wf880180.github.io/number-oracle/ 。這個網址只有在你完成建立與發布後才會生效。
 
