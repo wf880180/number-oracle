@@ -1,5 +1,7 @@
 # 拾數 · 數字卦手記
 
+繁體中文 | [English](README.en.md)
+
 手機與電腦適用的靜態網頁，無須安裝套件。直接開啟 index.html 即可使用，也能放在 GitHub Pages。
 
 ## 起卦規則
