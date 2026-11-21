@@ -98,12 +98,12 @@ function reading(r,category='其他'){if(!categories.includes(category))category
 {title:`本卦｜${r.base.name}：${category}中的課題`,text:`這一卦的核心是「${r.base.theme}」。${topicText(r.base,category)}`},
 {title:`動爻｜${stage[0]}`,text:`第${r.moving}爻可從「${stage[0]}」來閱讀。${topicStages[category][r.moving-1]}`},
 {title:`變卦｜${r.changed.name}：${category}的調整方向`,text:`變卦的核心是「${r.changed.theme}」。${topicText(r.changed,category)} 這是調整時的參照，不表示事情必然如此發生。`},
-{title:`綜合閱讀｜給${category}的提醒`,text:`先以「${r.base.theme}」檢視現況，再以「${r.changed.theme}」思考調整方向。${topicStages[category][r.moving-1]} 可以記下一個現在做得到的行動，之後觀察${category==='工作'?'任務進度、合作回應與自己的負荷':category==='感情'?'雙方溝通、實際投入與相處感受':'家人的回應、分工是否落實與彼此的負擔'}是否出現改變。`}
+{title:`綜合解讀｜給${category}的提醒`,text:`先以「${r.base.theme}」檢視現況，再以「${r.changed.theme}」思考調整方向。${topicStages[category][r.moving-1]} 可以記下一個現在做得到的行動，之後觀察${category==='工作'?'任務進度、合作回應與自己的負荷':category==='感情'?'雙方溝通、實際投入與相處感受':'家人的回應、分工是否落實與彼此的負擔'}是否出現改變。`}
 ];return [
 {title:'本卦｜'+r.base.name+'：當下的課題',text:details[r.base.id-1]},
 {title:'動爻｜'+stage[0],text:stage[1]},
 {title:'變卦｜'+r.changed.name+'：變動後的參照',text:details[r.changed.id-1]+' 這裡的變卦用來思考調整後可能面對的課題，不表示事情必然如此發生。'},
-{title:'綜合閱讀｜從當下走向調整',text:`這組卦可以先以「${r.base.theme}」理解當下，再從「${stage[0]}」檢查正在變動的環節，最後以「${r.changed.theme}」思考下一步。對照你心中的問題，分別記下目前的事實、最需要調整的一件事，以及可以觀察的後續訊號。`}
+{title:'綜合解讀｜從當下走向調整',text:`這組卦可以先以「${r.base.theme}」理解當下，再從「${stage[0]}」檢查正在變動的環節，最後以「${r.changed.theme}」思考下一步。對照你心中的問題，分別記下目前的事實、最需要調整的一件事，以及可以觀察的後續訊號。`}
 ];}
 const api={reading,details,stages,categories};if(typeof module!=='undefined')module.exports=api;else root.OracleReading=api;
 })(globalThis);
